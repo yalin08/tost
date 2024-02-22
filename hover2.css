@@ -103,15 +103,20 @@ nav.fill ul li a:hover:after {
 
 div.a {
   transition: all 0.7s;
-  border:15px 15px 15px 15px purple solid;
 
-  background-color: darkgrey;
+  border-style: solid;
+  border-color: purple;
+  border-width: 0;
+  border-bottom-width:0.35rem;
+  
+  animation: 1s darkenNav;
+  background-color: rgb(73, 67, 77);
 }
 
 
 div.a:hover {
 
-  background: black;
+  background-color: rgb(35, 32, 39);
   z-index: 1;
 }
 
@@ -123,11 +128,10 @@ body {
   font-family: "Roboto", sans-serif;
   transition: all 1s;
   animation: 1s darkenBody;
-  background-color: black;
+  background-color: rgb(45, 46, 56);
 
 
 }
-
 
 
 
@@ -135,14 +139,10 @@ body {
 
 @keyframes darkenBody{
 0%{
-  background-color: #FFF3CD;
-  
-  border:15px 15px 15px 15px purple solid;
+  background-color:  #FFF3CD;
 }
 100%{
-  background-color: black;
-  
-  border:15px 15px 15px 15px purple solid;
+  background-color: rgb(45, 46, 56);
 }
 }
 
@@ -151,11 +151,12 @@ body {
 
 0%{
   background-color:#ffcc70;
-  border: #ffcc70;
+  border-color:#FFC107;
+
 }
 100%{
-  background-color: darkgrey;
-  border: purple;
+  background-color: rgb(35, 32, 39);
+  border-color: purple;
 }
 
 }
