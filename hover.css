@@ -1,0 +1,136 @@
+body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  small {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  b{
+    text-shadow: 0px 0px 5px black,0px 0px 3px black;
+  }
+
+  
+  .center {
+    text-align: center;
+  }
+  
+  section {
+    height: 100vh;
+  }
+  
+  /* NAVIGATION */
+  nav {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all 0.3s;
+  }
+  nav ul li a:hover {
+    color: #555;
+  }
+  
+  /* stroke */
+  nav.stroke ul li a,
+  nav.fill ul li a {
+    position: relative;
+  }
+  nav.stroke ul li a:after,
+  nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    height: 1px;
+  }
+  nav.stroke ul li a:hover:after {
+    
+    width: 100%;
+  }
+  
+  nav.fill ul li a {
+    transition: all 1s;
+  }
+  
+  nav.fill ul li a:after {
+    text-align: left;
+    content: ".";
+    margin: 0;
+    opacity: 0;
+  }
+  nav.fill ul li a:hover {
+  
+    z-index: 1;
+  }
+  nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill  1s  forwards;
+    -webkit-animation: fill  1s forwards;
+    -moz-animation: fill 1s  forwards;
+    opacity: 1;
+  }
+
+
+  div.a {
+    background:  #ffea92;
+    transition: all 0.7s;
+  }
+
+
+  div.a:hover {
+  
+    background: #ffcc70;
+    z-index: 1;
+  }
+
+
+  
+
+  
+  
+  /* Keyframes */
+
+  @-webkit-keyframes fill {
+    0% {
+      width: 0%;
+      height: 1px;
+    }
+    50% {
+      width: 100%;
+      height: 4px;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      background: brown;
+    }
+  }
+  
+  
+  
