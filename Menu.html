@@ -17,28 +17,36 @@
 
 <body class="bg-warning-subtle">
   <!-- NAVBAR-->
-  <div
-    class="container-fluid mx-0 px-0 a border border-warning   border-5 border-end-0 border-start-0 border-top-0 text-light">
-    <nav class="navbar ">
-      <div class="col-12 col-sm-6 text-justify ">
-         <a href="index.html"> <img src="img/logo.png" class="img-fluid border border-dark  border-5  rounded-circle  " width="120px" /></a>
+  <div class="container-fluid mx-0 px-0 a  text-light">
+    <nav class="navbar  ">
+      <div>
+        <a href="index.html"> <img src="img/logo.png"
+            class="img-fluid border border-dark  border-5  rounded-circle my-0 my-md-3 offset-10 offset-md-0  "
+            width="120px" /></a>
       </div>
 
-      <nav class="row fs-4 fill col-12 col-sm py-0 mt-4 ">
-        <ul class="row ">
-          <li class="col-6 col-xl-3  fw-bold  ">
-            <a class="nav-link pt-1 m-0  px-2 navbartext  " href="index.html"><b>Anasayfa</b>  </a>
-          </li>
-          <li class="col-6 col-xl-3  fw-bold  ">
-            <a class="nav-link pt-1 m-0 px-2 navbartext" href="Hakkimizda.html"> <b>Hakkımızda</b> </a>
-          </li>
-          <li class="col-6 col-xl-3  fw-bold   ">
-            <a class="nav-link pt-1 m-0 px-2  navbartext" href="Menu.html"><b>Menü</b>  </a>
-          </li>
-          <li class="col-6 col-xl-3 fw-bold    ">
-            <a class="nav-link pt-1 m-0 px-2" href="Iletisim.html"> <b>İLETİŞİM</b>  </a>
-          </li>
-        </ul>
+      <nav class="row fs-4 fill col-12 col-sm py-0 mt-4 navbar navbar-dark navbar-expand-md text-center  offset-md-3 ">
+
+        <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div>
+          <ul class="collapse navbar-collapse" id="navbarNav">
+            <li class="col-12 mt-3 mt-md-0   col-md-3  fw-bold   ">
+              <a class="nav-link pt-1  navbartext  " href="index.html"><b>Anasayfa</b> </a>
+            </li>
+            <li class="col-12 col-md-3  fw-bold   ">
+              <a class="nav-link pt-1   navbartext" href="Hakkimizda.html"> <b>Hakkımızda</b> </a>
+            </li>
+            <li class="col-12 col-md-3  fw-bold   ">
+              <a class="nav-link pt-1   navbartext" href="Menu.html"><b>Menü</b> </a>
+            </li>
+            <li class="col-12 col-md-3 fw-bold    ">
+              <a class="nav-link pt-1  " href="Iletisim.html"> <b>İLETİŞİM</b> </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </nav>
 
@@ -48,35 +56,40 @@
 
   <!--MAIN-->
   <main class="col-12 pb-5  ">
-    
+
     <div class="container col-3 mt-5 ">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active  ">
-          <img src="img/dino.png" class="d-block " max-width="200px">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 ">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active  ">
+            <img src="img/dino.png" class="d-block " max-width="200px">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 ">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
 
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+
     </div>
-
-      </div>
 
 
   </main>
